@@ -35,7 +35,7 @@ const Search = () => {
     }
 
     function hideLoginHandler(){
-      setShowLogin(() => true);
+      setShowLogin(() => false);
     }
   
     async function chatHandler(e: any){
