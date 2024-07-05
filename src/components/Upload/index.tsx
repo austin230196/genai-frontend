@@ -17,7 +17,7 @@ const Upload: React.FC<{close: () => void}> = ({close}) => {
     const upload = useUploadDocument();
 
 
-    const uploadFileHandler = async (e: React.MouseEvent<HTMLButtonElement>): Promise<void> => {
+    const uploadFileHandler = async (_: React.MouseEvent<HTMLButtonElement>): Promise<void> => {
         console.log("Uploading")
         setLoading(() => true);
         try{
@@ -38,7 +38,7 @@ const Upload: React.FC<{close: () => void}> = ({close}) => {
         }
     }
 
-    const triggerFileHandler = (e: React.MouseEvent<HTMLDivElement>): void => {
+    const triggerFileHandler = (_: React.MouseEvent<HTMLDivElement>): void => {
         if(inputRef.current === null) return;
         inputRef.current.click();
     }

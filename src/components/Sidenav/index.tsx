@@ -90,7 +90,7 @@ const Sidenav = () => {
                 ) :
                 (
                     files.map((d: IFile, i: number) => (
-                        <Document key={i} onClick={e => loadFileHandler(d)}>
+                        <Document key={i} onClick={_ => loadFileHandler(d)}>
                             <p>{d.name.substring(0, 20) + "...."}</p>
                             <span>{d.created_at}</span>
                         </Document>

@@ -98,8 +98,8 @@ const Search = () => {
                 {showUpload ? <Upload close={() => setShowUpload(() => false)} /> : null}
                 <ChatBox>
                     <RelativeContainer>
-                      <ChatInput onMouseOver={e => setInputTooltip(() => true)} 
-                      onMouseLeave={e => {
+                      <ChatInput onMouseOver={() => setInputTooltip(() => true)} 
+                      onMouseLeave={() => {
                         setTimeout(() => {
                           setInputTooltip(() => false)
                         }, 300)
