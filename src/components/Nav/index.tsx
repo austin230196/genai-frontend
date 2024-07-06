@@ -9,10 +9,11 @@ import Sidenav from "../Sidenav";
 
 const Nav = () => {
     const [backdrop, setBackdrop] = useState(false);
-    function hideBackdrop(e: MouseEvent<HTMLDivElement>){
+    function hideBackdrop(_: MouseEvent<HTMLDivElement>){
         // if(e.target !== e.currentTarget) return;
         setBackdrop(() => false);
     }
+
     return (
         <NavWrapper>
             {
