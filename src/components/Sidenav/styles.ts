@@ -3,13 +3,19 @@ import styled from "styled-components";
 
 export const SidenavWrapper = styled.div`
     width: 260px;
-    height:100vh;
+    height:100%;
     background-color: ${props => props.theme.infoLight};
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+
+
+    @media screen and (max-width: 864px) {
+        background-color: ${props => props.theme.info};
+    }
+
 `
 
 export const SidenavTop = styled.div`

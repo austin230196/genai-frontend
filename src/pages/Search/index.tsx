@@ -51,6 +51,7 @@ const Search = () => {
         console.log({r});
         if(r.status !== 'success') throw new Error(r.message);
         updateQueries(r.data);
+        setQuery(() => "")
       }catch(e: any){
         toast(e.message, {type: 'error'});
       }finally{
