@@ -1,14 +1,14 @@
+import { useState } from "react";
 import {toast} from "react-toastify";
 import { FaRunning, FaUpload } from "react-icons/fa";
+import { useQueryClient } from "@tanstack/react-query";
 
 import { useChat } from "../../store/mutation";
 import { MainLayout } from "../../layouts"
-import { useState } from "react";
 import { ChatBox, ChatButton, ChatInput, EmptyChat, LoadedDocumentConmtainer, MessageBox, QueryAnswer, QueryContainer, QueryQuestion, RelativeContainer, SearchWrapper } from "./styles";
 import { Logo, Tooltip, Upload } from "../../components";
 import useStore from "../../store/store";
 import Login from "../Login";
-import { useQueryClient } from "@tanstack/react-query";
 import { getFileQueries } from "../../store/query";
 
 const Search = () => {

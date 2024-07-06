@@ -32,7 +32,8 @@ export const SidenavBody = styled.div`
 export const Document = styled.div`
     width: 100%;
     padding: 10px 15px;
-    border: 2px solid ${props => props.theme.info};
+    border: 2px solid ${props => props.theme.primary};
+    background-color: ${props => props.theme.secondary};
     cursor: pointer;
     border-radius: 8px;
     display: flex;

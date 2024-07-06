@@ -18,7 +18,7 @@ export const ChatBox = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border-radius: 16px;
+    border-radius: 16px 16px 0px 0px;
     gap: 5px;
     position: absolute;
     bottom: 0px;
@@ -94,7 +94,6 @@ export const EmptyChat = styled.div`
 `
 
 export const LoadedDocumentConmtainer = styled.div`
-    /* position: absolute; */
     top: 0;
     right: 0;
     font-size: 0.8rem;

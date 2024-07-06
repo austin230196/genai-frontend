@@ -22,9 +22,8 @@ export const MainLayoutWrapper = styled.div`
 
 export const MainLayoutContent = styled.div`
     width: 100%;
-    height: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    flex: 1;
+    padding-top: 10px;
     overflow-y: hidden;
 `;
 
